@@ -6,12 +6,12 @@ app=Flask(__name__)
 def index():
     return render_template('main_page.html')
 
-@app.route('/index',methods=['GET'])
+@app.route('/index.html')
 def index_phish():
     return render_template('index.html')
 
 
-@app.route('/index_phishscore')
+@app.route('/index_phishscore.html')
 def index_phishscore():
     return render_template('index_phishscore.html')
 

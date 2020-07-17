@@ -32,9 +32,9 @@ $(document).ready(function(){
    {
     var unique_domain_openphish = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
-    for(var count = 0; count<unique_domain_phishscore.length; count++)
+    for(var count = 0; count<unique_domain_openphish.length; count++)
     {
-     var cell_data = unique_domain_phishscore[count].split(",");
+     var cell_data = unique_domain_openphish[count].split(",");
      table_data += '<tr>';
      for(var cell_count=0; cell_count<cell_data.length; cell_count++)
      {
@@ -50,7 +50,7 @@ $(document).ready(function(){
      table_data += '</tr>';
     }
     table_data += '</table>';
-    $('#unique_domain_phishscore').html(table_data);
+    $('#Phishscore').html(table_data);
    }
   });
  });
